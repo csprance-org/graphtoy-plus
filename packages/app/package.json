@@ -1,0 +1,20 @@
+{
+  "name": "@graphtoy/app",
+  "version": "1.0.0",
+  "description": "The graphtoy-plus application at https://graphtoy-plus.csprance.com",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@graphtoy/core": "workspace:*",
+    "nuxt": "^3.17.5",
+    "vue": "^3.5.16",
+    "vue-router": "^4.5.1"
+  }
+}

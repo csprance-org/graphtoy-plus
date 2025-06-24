@@ -1,0 +1,56 @@
+{
+  "name": "@graphtoy/core",
+  "version": "1.0.0",
+  "description": "Mathematical graphing library with real-time visualization capabilities",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint src --ext ts",
+    "lint:fix": "eslint src --ext ts --fix",
+    "clean": "rm -rf dist",
+    "prepare": "pnpm run build"
+  },
+  "keywords": [
+    "graphing",
+    "mathematics",
+    "visualization",
+    "canvas",
+    "functions",
+    "real-time",
+    "typescript"
+  ],
+  "author": "GraphToy Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "24.0.3",
+    "@typescript-eslint/eslint-plugin": "8.34.1",
+    "@typescript-eslint/parser": "8.34.1",
+    "@vitest/coverage-v8": "3.2.4",
+    "@vitest/ui": "3.2.4",
+    "eslint": "9.29.0",
+    "jsdom": "26.1.0",
+    "tsup": "8.5.0",
+    "typescript": "5.8.3",
+    "vitest": "3.2.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
